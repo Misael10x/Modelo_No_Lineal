@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgba(66, 214, 36, 0.5); /* Un color de fondo claro */
+    color: rgb(51, 51, 51);
+    margin: 0;
+    padding: 20px;
+    background-image: url('https://images5.alphacoders.com/380/380567.png'); /* Fondo con una imagen */
+    background-size: cover;
+}
+
+h1 {
+    color: rgb(34, 34, 59);
+    text-align: center;
+}
+
+form {
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco con transparencia */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 0 auto 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: rgb(50, 50, 50);
+}
+
+input[type="number"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid rgb(200, 200, 200);
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button {
+    background-color: rgb(106, 34, 139);
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+}
+
+button:hover {
+    background-color: rgb(28, 120, 28);
+}
+
+h2 {
+    color: rgb(34, 34, 59);
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    font-size: 18px;
+    color: rgb(50, 50, 50);
+}
+
+img {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    height: auto;
+}
