@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Optimización</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Solución de Optimización</h1>
+    <form method="post">
+        <label for="a">Ingrese el valor de a (demanda del primer mes):</label>
+        <input type="number" id="a" name="a" required>
+        <br>
+        <label for="b">Ingrese el valor de b (demanda del segundo y tercer mes):</label>
+        <input type="number" id="b" name="b" required>
+        <br>
+        <button type="submit">Calcular</button>
+    </form>
+    {% if graphic %}
+        <h2>Resultados</h2>
+        <p>Solución óptima: x1={{ x1_opt }}, x2={{ x2_opt }}, x3={{ x3_opt }}</p>
+        <p>Resultado de la función objetivo (Z): {{ z_opt }}</p>
+        <img src="data:image/png;base64,{{ graphic }}" alt="Gráfica 3D">
+    {% endif %}
+</body>
+</html>
